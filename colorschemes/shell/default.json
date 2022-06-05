@@ -1,0 +1,37 @@
+{
+  "groups": {
+    "active_window_status": { "fg": "darkblue", "bg": "gray0", "attrs": [] },
+    "window_status": { "fg": "gray70", "bg": "gray0", "attrs": [] },
+    "activity_status": { "fg": "yellow", "bg": "gray0", "attrs": [] },
+    "bell_status": { "fg": "red", "bg": "gray0", "attrs": [] },
+    "window": { "fg": "gray6", "bg": "gray0", "attrs": [] },
+    "window:divider": { "fg": "gray4", "bg": "gray0", "attrs": [] },
+    "window:current": { "fg": "mediumcyan", "bg": "darkblue", "attrs": [] },
+    "window_name": { "fg": "white", "bg": "darkblue", "attrs": ["bold"] },
+    "session": { "fg": "black", "bg": "gray90", "attrs": ["bold"] },
+    "session:prefix": { "fg": "gray90", "bg": "darkblue", "attrs": ["bold"] },
+    "hostname": { "fg": "black", "bg": "darkblue", "attrs": [] },
+    "cwd:current_folder": { "fg": "white", "bg": "brightorange", "attrs": ["bold"] },
+    "date": { "fg": "green", "bg": "gray3", "attrs": ["bold"] },
+    "time": { "fg": "green", "bg": "gray3", "attrs": ["bold"] },
+    "battery_gradient": {
+      "fg": "brightpurple",
+      "bg": "gray3"
+    },
+    "battery_full": { "fg": "red", "bg": "gray0", "attrs": [] },
+    "battery_ac_state": { "fg": "red", "bg": "gray0", "attrs": [] },
+    "player_play": { "fg": "gray3", "bg": "yellow", "attrs": ["bold"] },
+    "player_pause": { "fg": "gray3", "bg": "gray8", "attrs": ["bold"] },
+    "memory_usage": { "fg": "brightorange", "bg": "gray3", "attrs": ["bold"] },
+    "cpu_load_percent_gradient": {
+      "fg": "gold3",
+      "bg": "gray3",
+      "attrs": ["bold"]
+    },
+    "network_load": {
+      "fg": "brightorange",
+      "bg": "gray3",
+      "attrs": ["bold"]
+    }
+  }
+}

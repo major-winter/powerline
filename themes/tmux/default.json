@@ -3,7 +3,9 @@
     "left": [],
     "right": [
       {
-        "function": "powerline.segments.common.players.spotify"
+        "function": "powerline.segments.common.players.spotify",
+        "display": false,
+        "priority": 50
       },
       {
         "function": "powerline_gitstatus.gitstatus"
@@ -26,16 +28,7 @@
       {
         "function": "powerline.segments.common.time.date",
         "args": {
-          "format": "%A"
-        }
-      },
-      {
-        "function": "powerline.segments.common.time.date"
-      },
-      {
-        "function": "powerline.segments.common.time.date",
-        "args": {
-          "format": "%H:%M"
+          "format": "%d-%m-%y \uf455 %A \ue389 %H:%M"
         }
       }
     ]

@@ -1,35 +1,102 @@
 {
   "groups": {
-		"active_window_status": {"fg": "gray6",   "bg": "gray0",    "attrs": []},
-		"window_status":        {"fg": "gray70",     "bg": "gray0",    "attrs": []},
-		"activity_status":      {"fg": "yellow",     "bg": "gray0",    "attrs": []},
-		"bell_status":          {"fg": "red",        "bg": "gray0",    "attrs": []},
-		"window":               {"fg": "gray6",      "bg": "gray0",    "attrs": []},
-		"window:divider":       {"fg": "gray4",      "bg": "gray0",    "attrs": []},
-		"window:current":       {"fg": "gray2",      "bg": "mediumgreen", "attrs": []},
-		"window_name":          {"fg": "black",      "bg": "mediumgreen", "attrs": ["bold"]},
-		"session":              {"fg": "black",      "bg": "khaki1",   "attrs": ["bold"]},
-		"session:prefix":       {"fg": "gray90",     "bg": "darkblue", "attrs": ["bold"]},
-    "hostname": { "fg": "gray3", "bg": "darkcyan", "attrs": [] },
-    "date": { "fg": "green", "bg": "gray3", "attrs": ["bold"] },
-    "time": { "fg": "green", "bg": "gray3", "attrs": ["bold"] },
-    "battery_gradient": {
-      "fg": "brightpurple",
-      "bg": "gray3"
+    "active_window_status": {
+      "fg": "powerline:lime",
+      "bg": "gray0",
+      "attrs": []
     },
-    "battery_full": { "fg": "red", "bg": "gray0", "attrs": [] },
-    "battery_ac_state": { "fg": "red", "bg": "gray0", "attrs": [] },
-    "player_play": { "fg": "gray3", "bg": "yellow", "attrs": ["bold"] },
-    "player_pause": { "fg": "gray3", "bg": "gray8", "attrs": ["bold"] },
-    "memory_usage": { "fg": "brightorange", "bg": "gray3", "attrs": ["bold"] },
-    "cpu_load_percent_gradient": {
-      "fg": "gold3",
-      "bg": "gray3",
+    "window_status": {
+      "fg": "gray4",
+      "bg": "gray0",
+      "attrs": []
+    },
+    "activity_status": {
+      "fg": "yellow",
+      "bg": "gray0",
+      "attrs": []
+    },
+    "bell_status": {
+      "fg": "red",
+      "bg": "powerline:red",
+      "attrs": []
+    },
+    "window": {
+      "fg": "gray4",
+      "bg": "gray0",
+      "attrs": []
+    },
+    "window:divider": {
+      "fg": "gray8",
+      "bg": "gray0",
+      "attrs": []
+    },
+    "window:current": {
+      "fg": "gray2",
+      "bg": "powerline:blue",
+      "attrs": []
+    },
+    "window_name": {
+      "fg": "gray2",
+      "bg": "powerline:blue",
+      "attrs": ["bold"]
+    },
+    "session": {
+      "fg": "gray2",
+      "bg": "powerline:lime",
+      "attrs": ["bold"]
+    },
+    "session:prefix": {
+      "fg": "gray4",
+      "bg": "powerline:blue",
+      "attrs": ["bold"]
+    },
+    "hostname": {
+      "fg": "gray3",
+      "bg": "darkcyan",
+      "attrs": []
+    },
+    "player_play": {
+      "fg": "gray3",
+      "bg": "yellow",
+      "attrs": ["bold"]
+    },
+    "player_pause": {
+      "fg": "gray3",
+      "bg": "gray8",
       "attrs": ["bold"]
     },
     "network_load": {
       "fg": "brightorange",
       "bg": "gray3",
+      "attrs": ["bold"]
+    },
+    "battery_gradient": {
+      "fg": "gray3",
+      "bg": "powerline:lime"
+    },
+    "memory_usage": {
+      "fg": "gray4",
+      "bg": "powerline:orange",
+      "attrs": ["bold"]
+    },
+    "cpu_load_percent_gradient": {
+      "fg": "gray3",
+      "bg": "powerline:magenta",
+      "attrs": ["bold"]
+    },
+    "weather": {
+      "fg": "gray3",
+      "bg": "powerline:blue",
+      "attrs": ["bold"]
+    },
+    "date": {
+      "fg": "gray3",
+      "bg": "powerline:lime",
+      "attrs": ["bold"]
+    },
+    "time": {
+      "fg": "green",
+      "bg": "mediumgreen",
       "attrs": ["bold"]
     }
   }

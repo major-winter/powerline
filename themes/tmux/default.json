@@ -4,29 +4,31 @@
     "right": [
       {
         "function": "powerline.segments.common.players.spotify",
-        "display": false,
-        "priority": 50
+        "display": false
+      },
+      {
+        "function": "powerline.segments.common.bat.battery",
+        "display": false
       },
       {
         "function": "powerline_gitstatus.gitstatus"
       },
       {
-        "function": "powerline.segments.common.bat.battery"
-      },
-      {
         "function": "powerline.segments.common.sys.memory_usage",
+        "priority": 10,
         "args": {
           "format": "\uf85a {percent:.1f}%"
         }
       },
       {
         "function": "powerline.segments.common.sys.cpu_load_percent",
+        "priority": 10,
         "args": {
           "format": "\uf878  {0:.0f}%"
         }
       },
       {
-        "function": "segments.weather.weather",
+        "function": "segments.weather",
         "args": {
           "key": "531082296db146a8a9c164828221907"
         }
@@ -34,7 +36,7 @@
       {
         "function": "segments.time.date",
         "args": {
-          "format": "\uf455 %d-%m \uf455 %A \ue389 %H:%M"
+          "format": "\uf455 %d-%m-%y \uf455 %a \ue389 %H:%M"
         }
       }
     ]

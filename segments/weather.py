@@ -4,13 +4,14 @@ from __future__ import (unicode_literals, division,
 
 import json
 
+from datetime import datetime
 from urllib.parse import quote
 from powerline.lib.url import urllib_read
 # from powerline.lib.threaded import KwThreadedSegment
 # from powerline.segments import with_docstring
 
 
-weather_conditions_icons = {
+weather_day_icons = {
     1000: "\ue30c",  # Sunny
     1003: "\ufa94",  # Partly cloudy
     1009: "\ue30c",  # Overcast
@@ -19,6 +20,17 @@ weather_conditions_icons = {
     1240: "\ue316",  # Light rain shower
     1273: "\ue31d",  # Light rain with thunder
     1276: "\ue31d",  # Light rain with thunder
+}
+
+weather_night_icons = {
+    1000: "\ue30c",  # Sunny
+    1003: "\ue37e",  # Partly cloudy
+    1009: "\ue30c",  # Overcast
+    1030: "\uf74e",  # Mist
+    1183: "\ue3ac",  # Night light rain
+    1240: "\ue334",  # Night light rain shower
+    1273: "\ue32a",  # Night patch light rain with thunder
+    1276: "\ue32a",  # Night moderate rain with thunder
 }
 
 
@@ -30,7 +42,7 @@ def weather_test():
     current = response['current']
     condition_code = (current['condition']['code'])
     temp = current['temp_c']
-    icon = weather_conditions_icons[condition_code]
+    icon = weather_day_icons[condition_code]
     feelslike = current['feelslike_c']
     humidity = current['humidity']
     print(temp, feelslike, humidity, icon)
@@ -47,7 +59,9 @@ def weather(pl, key="531082296db146a8a9c164828221907", location="Ho Chi Minh"):
     current = response['current']
     condition_code = int(current['condition']['code'])
     temp = current['temp_c']
-    icon = weather_conditions_icons[condition_code]
+    icon = weather_day_icons[condition_code]
+    if datetime.now().hour >= 17 or datetime.now().hour <= 6:
+        icon = weather_night_icons[condition_code]
     feelslike = current['feelslike_c']
     humidity = current['humidity']
     return [{
